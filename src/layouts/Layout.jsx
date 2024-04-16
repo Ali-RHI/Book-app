@@ -1,14 +1,16 @@
+import styles from "./Layout.module.css"
+
 function Layout({ children }) {
     return (
         <>
-            <header>
+            <header className={styles.header}>
                 <h1>Book App</h1>
                 <p>
                     <a href="https://uniword.ir">Uniword</a> | Your digital partner
                 </p>
             </header>
             { children }
-            <footer><p>Developed by Ali with ❤️</p></footer>
+            <footer className={styles.footer}><p>Developed by Ali with ❤️</p></footer>
         </>)
 
 }
